@@ -5,10 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./scss/style.css">
   
   <title>Frontend Mentor | Dictionary web app</title>
 </head>
 <body>
-
+  <div id="container">
+<section id="header-content">
+  <div id="logo">
+      <img src="./assets/images/logo.svg" alt="Style">
+  </div>
+    <div id="selectStyle">
+      <div id="styleDropdown">
+        <select id="myimage" name="languages" id="lang">
+          <option value="Serif">Serif</option>
+          <option value="Sans">Sans</option>
+          <option value="Mono">Mono</option>
+        </select>
+      </div>
+      <div id="checkStyle">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <img src="./assets/images/icon-moon.svg" alt="">
+      </div>
+    </div>
+  
+</section>
+<section>
+  <div id="searchword">
+    <form  action="#" onsubmit="handle()">
+    <input id="searchbar" type="text" placeholder="Saisissez votre mot">
+  </form>
+  </div>
+</section>
+<section id="showDefinition">
+  <div id="headPresent">
+    <div id="titlePresent">
+      
+    </div>
+    <div id="playPresent">
+      <img id="playButton" src="./assets/images/icon-play.svg" alt="Play">
+    </div>
+  </div>
+  <div id="nounDefinition">
+  <h2><span>noun</span></h2>
+  </div>
+  <div id="verbDefinition">
+    <h2>verb</h2>
+  </div>
+  <hr>
+  <p>Source : <a href=""></a></p>
+</section>
+</div>
+<script src="js/script.js" defer></script>
 </body>
 </html>
